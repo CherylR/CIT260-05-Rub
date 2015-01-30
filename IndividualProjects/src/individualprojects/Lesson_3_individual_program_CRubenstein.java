@@ -25,14 +25,15 @@ public class Lesson_3_individual_program_CRubenstein {
 
         Lesson_3_individual_program_CRubenstein() {
                 String welcome = "Please enter a player name to begin game";
-                String level = "Beginner";
+                String level = "Beginner";/* for the purpose of this lab we have chosen beginner*/
+                /* random whole numbers up to 10 will appear for num1 and num2*/
                 num1 = (int)(Math.random()*10);
                 num2 = (int)(Math.random()*10);
         }
 
     public void getPlayerName(){
                 Scanner input = new Scanner(System.in);
-                System.out.print("Enter your player name: ");
+                System.out.print("Enter your player name: ");/*Player enters their name*/
                 playerName = input.next();
     }
 
@@ -51,6 +52,11 @@ public class Lesson_3_individual_program_CRubenstein {
                 System.out.print("Enter your answer here: ");
                 answer = input.nextDouble();
     }
+    
+    /* a random equation will display and the player will be promted to answer.\n
+    If player answers correctly a message is displayed and another equation appears.\n
+    If player answers incorrectly a different message appears and player is given \n
+    another equation to try.*/
 
         public void displayQuestion(){
                 System.out.println(num1 + " x " + num2 + " = ");
@@ -65,8 +71,9 @@ public class Lesson_3_individual_program_CRubenstein {
                 }
         }
 
-       /* public static void main(String args[]) {
+        public static void main(String args[]) {
                 Lesson_3_individual_program_CRubenstein ob1 = new Lesson_3_individual_program_CRubenstein();
+                ob1.getPlayerName();
                 ob1.displayQuestion();
                 ob1.getAnswer();
                 ob1.checkAnswer();
@@ -75,5 +82,5 @@ public class Lesson_3_individual_program_CRubenstein {
                 ob2.displayQuestion();
                 ob2.getAnswer();
                 ob2.checkAnswer();
-        }*/
+        }
 }
