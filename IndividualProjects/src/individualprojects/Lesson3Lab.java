@@ -11,7 +11,7 @@ import java.util.Scanner;
 /***
  * @author cheryl
  ***/
-public class Lesson_3_individual_program_CRubenstein {
+public class Lesson3Lab {
         /***
          * Lesson 3 individual assignment - two primitive variables, two math operators, /n
          * one relational or logical operator, type casting and two character escape sequences
@@ -23,7 +23,7 @@ public class Lesson_3_individual_program_CRubenstein {
         int num2;
         double answer;
 
-        Lesson_3_individual_program_CRubenstein() {
+        Lesson3Lab() {
                 String welcome = "Please enter a player name to begin game";
                 String level = "Beginner";/* for the purpose of this lab we have chosen beginner*/
                 /* random whole numbers up to 10 will appear for num1 and num2*/
@@ -72,13 +72,13 @@ public class Lesson_3_individual_program_CRubenstein {
         }
 
         public static void main(String args[]) {
-                Lesson_3_individual_program_CRubenstein ob1 = new Lesson_3_individual_program_CRubenstein();
+                Lesson3Lab ob1 = new Lesson3Lab();
                 ob1.getPlayerName();
                 ob1.displayQuestion();
                 ob1.getAnswer();
                 ob1.checkAnswer();
 
-                Lesson_3_individual_program_CRubenstein ob2 = new Lesson_3_individual_program_CRubenstein();
+                Lesson3Lab ob2 = new Lesson3Lab();
                 ob2.displayQuestion();
                 ob2.getAnswer();
                 ob2.checkAnswer();
